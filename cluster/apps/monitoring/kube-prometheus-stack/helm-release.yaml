@@ -35,7 +35,7 @@ spec:
           - name: "null"
           - name: "slack"
             slack_configs:
-              - channel: "#demo-len-lma"
+              - channel: "#demo-lens-lma"
                 icon_url: "https://avatars3.githubusercontent.com/u/3380462"
                 send_resolved: true
                 text: |-
