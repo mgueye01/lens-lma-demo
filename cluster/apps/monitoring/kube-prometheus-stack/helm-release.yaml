@@ -91,6 +91,8 @@ spec:
             targetLabel: kubernetes_node
     kube-state-metrics:
       fullnameOverride: kube-state-metrics
+      collectors:
+        verticalpodautoscalers: true
     prometheus-node-exporter:
       fullnameOverride: node-exporter
     grafana:
