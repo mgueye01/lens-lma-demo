@@ -7,6 +7,6 @@ resources:
   - promtail
   - pushgateway
   - thanos
-  #  - botkube
+  - botkube
   - uptimerobot-heartbeat
   - goldilocks

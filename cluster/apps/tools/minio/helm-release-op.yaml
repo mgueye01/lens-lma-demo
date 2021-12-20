@@ -39,7 +39,7 @@ spec:
       porit: 9000
     existingSecret: minio-helm-values
     ingress:
-      enabled: false
+      enabled: true
       ingressClassName: "nginx"
       hosts:
         - "minio.${SECRET_DOMAIN}"
