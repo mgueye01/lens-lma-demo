@@ -33,10 +33,20 @@ spec:
       enabled: true
       accessMode: ReadWriteOnce
       size: 5Gi
+    # service:
+    #   type: ClusterIP
+    #   clusterIP: ~
+    #   port: 9000
     service:
-      type: ClusterIP
-      clusterIP: ~
-      port: 9000
+      main:
+        enabled: true
+        ports:
+          http:
+            enabled: true
+            port: 9001
+          api:
+            enabled: true
+            port: 9000
     existingSecret: minio-helm-values
     ingress:
       enabled: true
