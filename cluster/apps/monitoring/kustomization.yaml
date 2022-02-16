@@ -10,3 +10,4 @@ resources:
   - botkube
   - uptimerobot-heartbeat
   - goldilocks
+  - node-problem-detector
