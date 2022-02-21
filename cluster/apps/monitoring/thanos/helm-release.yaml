@@ -28,7 +28,7 @@ spec:
         sidecarsService: prometheus-thanos-discovery
         sidecarsNamespace: monitoring
       ingress:
-        enabled: true
+        enabled: false
         hostname: "thanos.${SECRET_DOMAIN}"
         ingressClassName: "nginx"
         annotations:
