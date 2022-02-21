@@ -29,10 +29,13 @@ spec:
         sidecarsNamespace: monitoring
       ingress:
         enabled: true
-        hostname: "thanos.${SECRET_DOMAIN}"
+        pathType: Prefix
+        hosts:
+          - "thanos.${SECRET_DOMAIN}"
         ingressClassName: "nginx"
-        annotations:
-        tls: true
+        tls:
+          - hosts:
+              - "thanos.${SECRET_DOMAIN}"
     existingObjstoreSecret: thanos-objstore
     queryFrontend:
       enabled: false
