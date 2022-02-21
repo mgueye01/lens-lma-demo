@@ -28,7 +28,7 @@ spec:
         sidecarsService: prometheus-thanos-discovery
         sidecarsNamespace: monitoring
       ingress:
-        enabled: true
+        enabled: false
         pathType: Prefix
         hosts:
           - "thanos.${SECRET_DOMAIN}"
