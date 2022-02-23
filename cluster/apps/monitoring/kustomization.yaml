@@ -11,3 +11,4 @@ resources:
   - uptimerobot-heartbeat
   - goldilocks
   - node-problem-detector
+  - karma
