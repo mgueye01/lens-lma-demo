@@ -12,3 +12,4 @@ resources:
   - goldilocks
   - node-problem-detector
   - karma
+  - kubernetes-event-exporter
