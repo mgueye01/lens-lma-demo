@@ -50,7 +50,7 @@ spec:
     existingSecret: minio-helm-values
     ingress:
       enabled: true
-      ingressClassName: "nginx"
+      ingressClassName: "nginx-default"
       hosts:
         - "minio.${SECRET_DOMAIN}"
       paths:

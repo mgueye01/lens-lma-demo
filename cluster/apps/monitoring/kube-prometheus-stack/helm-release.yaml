@@ -130,7 +130,7 @@ spec:
       ingress:
         enabled: true
         pathType: Prefix
-        ingressClassName: "nginx"
+        ingressClassName: "nginx-default"
         hosts:
           - "prometheus.${SECRET_DOMAIN}"
         tls:
