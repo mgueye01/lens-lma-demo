@@ -32,7 +32,7 @@ spec:
         pathType: Prefix
         hosts:
           - "thanos.${SECRET_DOMAIN}"
-        ingressClassName: "nginx"
+        ingressClassName: "nginx-default"
         tls:
           - hosts:
               - "thanos.${SECRET_DOMAIN}"

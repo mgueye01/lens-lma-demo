@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/name: *app
     app.kubernetes.io/instance: *app
 spec:
-  ingressClassName: nginx
+  ingressClassName: nginx-default
   rules:
     - host: &host "karma.${SECRET_DOMAIN}"
       http:
